@@ -23,7 +23,7 @@ namespace CoderByte_SimpleSymbols
 
             for (int i = 0; i < arr.Length; i++) //for each character in the char array
             {
-                if (!Regex.IsMatch(arr[i].ToString(), @"[+=]") && Regex.IsMatch(arr[i].ToString(), @"[abcdefghijklmnopqrstuvwxyz]")) //if the current character is not a + or =
+                if (!Regex.IsMatch(arr[i].ToString(), @"[+=]") && Regex.IsMatch(arr[i].ToString(), @"[abcdefghijklmnopqrstuvwxyz]")) //if the current character is not a + or = and the character is a letter
                 {    
                     if ((i - 1) >= 0 && (i + 1) < arr.Length) //and the character before and after the current character are within the array bounds
                     {
